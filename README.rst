@@ -28,4 +28,4 @@ Default values are:
 timezone: 'Europe/Berlin'
 utc: True
 
-See mopidy/pillar.example.
+See timezone/pillar.example.
