@@ -1,0 +1,8 @@
+name: timezone
+os: RedHat, Debian, Ubuntu, Suse, FreeBSD
+os_family: RedHat, Debian, Suse, FreeBSD
+version: 201504
+release: 1
+minimum_version: 2015.5
+summary: Formula for timezone management
+description: Formula for managing timezone settings
