@@ -1,0 +1,9 @@
+{% set map = {
+    'Suse': {
+        'path-localtime': '/etc/localtime',
+        'path-zoneinfo': '/usr/share/zoneinfo/',
+        'pkgname': 'timezone',
+    },
+} %}
+
+{% set confmap = map.get(grains.os_family) %}
