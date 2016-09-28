@@ -15,8 +15,8 @@ timezone.packages:
 
 timezone.symlink:
   file.symlink:
-    - name: {{ confmap.path-localtime }}
-    - target: {{ confmap.path-zoneinfo }}{{ timezone }}
+    - name: {{ confmap.path_localtime }}
+    - target: {{ confmap.path_zoneinfo }}{{ timezone }}
     - force: true
     - require:
       - pkg: {{ confmap.pkgname }}
