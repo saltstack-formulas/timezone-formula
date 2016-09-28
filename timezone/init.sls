@@ -13,8 +13,8 @@ timezone.packages:
   pkg.installed:
     - name: {{ confmap.pkgname }}
 
-{{ confmap.path-localtime }}:
-  file.symlink:
-    - target: {{ path-zoneinfo }}{{ timezone }}
-    - require:
-      - pkg: {{ confmap.pkgname }}
+file.symlink:
+  - name: {{ confmap.path-localtime }}
+  - target: {{ path-zoneinfo }}{{ timezone }}
+  - require:
+    - pkg: {{ confmap.pkgname }}
