@@ -1,6 +1,6 @@
 name: timezone
-os: Debian, Suse
-os_family: Debian, Suse
+os: Debian, Redhat, Suse
+os_family: Debian, Redhat, Suse
 version: 201504
 release: 1
 minimum_version: 2015.5
