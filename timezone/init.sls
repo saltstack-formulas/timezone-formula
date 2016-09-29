@@ -9,11 +9,11 @@ timezone_setting:
     - name: {{ timezone }}
     - utc: {{ utc }}
 
-timezone.packages:
+timezone_packages:
   pkg.installed:
     - name: {{ confmap.pkgname }}
 
-timezone.symlink:
+timezone_symlink:
   file.symlink:
     - name: {{ confmap.path_localtime }}
     - target: {{ confmap.path_zoneinfo }}{{ timezone }}
