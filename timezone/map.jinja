@@ -14,6 +14,11 @@
         'path_zoneinfo': '/usr/share/zoneinfo/',
         'pkgname': 'timezone',
     },
+    'Arch': {
+        'path_localtime': '/etc/localtime',
+        'path_zoneinfo': '/usr/share/zoneinfo/',
+        'pkgname': 'tzdata',
+    },
 } %}
 
 {% set confmap = map.get(grains.os_family) %}
