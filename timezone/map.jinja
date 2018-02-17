@@ -19,6 +19,11 @@
         'path_zoneinfo': '/usr/share/zoneinfo/',
         'pkgname': 'tzdata',
     },
+    'FreeBSD': {
+        'path_localtime': '/etc/localtime',
+        'path_zoneinfo': '/usr/share/zoneinfo/',
+        'pkgname': 'zoneinfo',
+    },
 } %}
 
 {% set confmap = map.get(grains.os_family) %}
