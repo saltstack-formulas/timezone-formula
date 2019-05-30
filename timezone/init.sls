@@ -1,7 +1,7 @@
 # This state configures the timezone.
 
-{%- set timezone = salt['pillar.get']('timezone:name', 'Europe/Berlin') %}
-{%- set utc = salt['pillar.get']('timezone:utc', True) %}
+{%- set timezone = salt['pillar.get']('timezone:lookup:name', 'Europe/Berlin') %}
+{%- set utc = salt['pillar.get']('timezone:lookup:utc', True) %}
 {% from "timezone/map.jinja" import confmap with context %}
 
 timezone_setting:
@@ -20,3 +20,4 @@ timezone_symlink:
     - force: true
     - require:
       - pkg: {{ confmap.pkgname }}
+      
