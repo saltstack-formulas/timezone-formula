@@ -9,6 +9,8 @@ timezone_setting:
     - name: {{ timezone }}
     - utc: {{ utc }}
 
+  {%- if grains.os not in ('MacOS', 'Windows') %}
+
 timezone_packages:
   pkg.installed:
     - name: {{ confmap.pkgname }}
@@ -20,3 +22,5 @@ timezone_symlink:
     - force: true
     - require:
       - pkg: {{ confmap.pkgname }}
+
+  {%- endif %}
