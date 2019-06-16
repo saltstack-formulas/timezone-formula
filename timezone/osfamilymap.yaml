@@ -1,0 +1,7 @@
+Suse:
+  pkgname: timezone
+FreeBSD:
+  pkgname: zoneinfo
+Gentoo:
+  pkgname: sys-libs/timezone-data
+MacOS: {}
