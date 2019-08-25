@@ -1,4 +1,10 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
 ---
-path_localtime: /etc/localtime
-path_zoneinfo: /usr/share/zoneinfo/
-pkgname: tzdata
+timezone:
+  name: Europe/Berlin
+  utc: true
+  path_localtime: /etc/localtime
+  path_zoneinfo: /usr/share/zoneinfo/
+  pkg:
+    name: tzdata
