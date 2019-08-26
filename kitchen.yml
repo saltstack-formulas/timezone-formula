@@ -134,26 +134,6 @@ verifier:
 
 suites:
   - name: default
-    excludes:
-      - centos-6-2017-7-py2
-    provisioner:
-      state_top:
-        base:
-          '*':
-            - timezone
-      pillars:
-        top.sls:
-          base:
-            '*':
-              - timezone
-      pillars_from_files:
-        timezone.sls: test/salt/pillar/timezone.sls
-    verifier:
-      inspec_tests:
-        - path: test/integration/default
-  - name: centos6
-    includes:
-      - centos-6-2017-7-py2
     provisioner:
       state_top:
         base:
