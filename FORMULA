@@ -1,7 +1,7 @@
 name: timezone
 os: Debian, RedHat, Suse, Arch, FreeBSD
 os_family: Debian, RedHat, Suse, Arch, FreeBSD
-version: 201504
+version: 0.4.0
 release: 1
 minimum_version: 2015.5
 summary: Formula for timezone management
