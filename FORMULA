@@ -6,3 +6,4 @@ release: 1
 minimum_version: 2015.5
 summary: Formula for timezone management
 description: Formula for managing timezone settings
+top_level_dir: timezone
