@@ -2,7 +2,7 @@
 # vim: ft=yaml
 ---
 timezone:
-  name: Europe/Berlin
+  name: Europe/Zurich
   utc: true
   path_localtime: /etc/localtime
   path_zoneinfo: /usr/share/zoneinfo/
