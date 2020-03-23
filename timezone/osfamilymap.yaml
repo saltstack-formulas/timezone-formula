@@ -10,16 +10,34 @@
 # you will need to provide at least an empty dict in this file, e.g.
 # osfamilymap: {}
 ---
+Debian: {}
+
+RedHat: {}
+
 Suse:
   pkg:
     name: timezone
+  dbus:
+    pkg: dbus-1
+
+Gentoo:
+  pkg:
+    name: sys-libs/timezone-data
+
+Arch: {}
+
+Alpine: {}
 
 FreeBSD:
   pkg:
     name: zoneinfo
 
-Gentoo:
+OpenBSD:
   pkg:
-    name: sys-libs/timezone-data
+    name: zoneinfo
+
+Solaris: {}
+
+Windows: {}
 
 MacOS: {}
