@@ -2,6 +2,15 @@
 Changelog
 =========
 
+`0.4.4 <https://github.com/saltstack-formulas/timezone-formula/compare/v0.4.3...v0.4.4>`_ (2020-03-27)
+----------------------------------------------------------------------------------------------------------
+
+Bug Fixes
+^^^^^^^^^
+
+
+* **osfamilmap.yaml:** dbus pkg name is not specific enough on Gentoo (\ `0e2da36 <https://github.com/saltstack-formulas/timezone-formula/commit/0e2da3600c85e5024ffa04cb1fdade129dd24089>`_\ )
+
 `0.4.3 <https://github.com/saltstack-formulas/timezone-formula/compare/v0.4.2...v0.4.3>`_ (2020-03-24)
 ----------------------------------------------------------------------------------------------------------
 
