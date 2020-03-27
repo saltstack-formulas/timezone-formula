@@ -23,6 +23,8 @@ Suse:
 Gentoo:
   pkg:
     name: sys-libs/timezone-data
+  dbus:
+    pkg: sys-apps/dbus
 
 Arch: {}
 
