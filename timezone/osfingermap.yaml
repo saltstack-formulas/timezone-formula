@@ -22,6 +22,10 @@ Ubuntu-16.04:
     run_service: false
 
 # os: Fedora
+Fedora-33:
+  dbus:
+    run_service: false
+Fedora-32: {}
 Fedora-31: {}
 Fedora-30: {}
 
