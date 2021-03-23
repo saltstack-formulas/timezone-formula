@@ -312,6 +312,7 @@ suites:
       state_top:
         base:
           '*':
+            - timezone._mapdata
             - timezone
       pillars:
         top.sls:
